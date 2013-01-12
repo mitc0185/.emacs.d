@@ -4,3 +4,6 @@
 [submodule "site-lisp/php-mode"]
 	path = site-lisp/php-mode
 	url = git@github.com:mitc0185/php-mode.git
+[submodule "site-lisp/js2-mode"]
+	path = site-lisp/js2-mode
+	url = git@github.com:mitc0185/js2-mode.git
