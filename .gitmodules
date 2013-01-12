@@ -1,3 +1,6 @@
 [submodule "site-lisp/web-mode"]
 	path = site-lisp/web-mode
 	url = git@github.com:mitc0185/web-mode.git
+[submodule "site-lisp/php-mode"]
+	path = site-lisp/php-mode
+	url = git@github.com:mitc0185/php-mode.git
