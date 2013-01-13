@@ -10,3 +10,6 @@
 [submodule "site-lisp/slime"]
 	path = site-lisp/slime
 	url = git@github.com:mitc0185/slime.git
+[submodule "site-lisp/swank-js"]
+	path = site-lisp/swank-js
+	url = git@github.com:mitc0185/swank-js.git
