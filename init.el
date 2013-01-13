@@ -1,2 +1,55 @@
 
 (add-hook 'org-mode-hook 'turn-on-visual-line-mode)
+
+;; act like we've been here before
+(setq inhibit-startup-message t)
+
+;; Are we on a mac?
+(setq is-mac (equal system-type 'darwin))
+
+;; Set path to dependencies
+(setq site-lisp-dir
+      (expand-file-name "site-lisp" user-emacs-directory))
+
+;; Set up load path
+(add-to-list 'load-path user-emacs-directory)
+(add-to-list 'load-path site-lisp-dir)
+
+;; Settings for currently logged in user
+(setq user-settings-dir
+      (concat user-emacs-directory "users/" user-login-name))
+(add-to-list 'load-path user-settings-dir)
+
+;; Add external projects to load path
+(dolist (project (directory-files site-lisp-dir t "\\w+"))
+  (when (file-directory-p project)
+    (add-to-list 'load-path project)))
+
+;; Keep emacs Custom-settings in separate file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file)
+
+;; Write backup files to own directory
+(setq backup-directory-alist
+      `(("." . ,(expand-file-name
+                 (concat user-emacs-directory "backups")))))
+
+;; Make backups of files, even when they're in version control
+(setq vc-make-backup-files t)
+
+;; Setup extensions
+; (eval-after-load 'org '(require 'setup-org))
+; (eval-after-load 'web-mode '(require 'setup-web-mode))
+
+;; Language specific setup files
+; (eval-after-load 'js2-mode '(require 'setup-js2-mode))
+; (eval-after-load 'php-mode '(require 'setup-php-mode))
+; (eval-after-load 'css-mode '(require 'setup-css-mode))
+
+;; Map files to modes
+(require 'mode-mappings)
+
+;; Misc
+(require 'appearance)
+; (require 'my-misc)
+; (when is-mac (require 'mac))
