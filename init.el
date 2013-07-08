@@ -1,6 +1,4 @@
 
-(add-hook 'org-mode-hook 'turn-on-visual-line-mode)
-
 ;; act like we've been here before
 (setq inhibit-startup-message t)
 
@@ -38,13 +36,14 @@
 (setq vc-make-backup-files t)
 
 ;; Setup extensions
-; (eval-after-load 'org '(require 'setup-org))
-; (eval-after-load 'web-mode '(require 'setup-web-mode))
+(eval-after-load 'org-mode '(require 'setup-org-mode))
+(eval-after-load 'web-mode '(require 'setup-web-mode))
+(eval-after-load 'ledger-mode '(require 'setup-ledger-mode))
 
 ;; Language specific setup files
-; (eval-after-load 'js2-mode '(require 'setup-js2-mode))
-; (eval-after-load 'php-mode '(require 'setup-php-mode))
-; (eval-after-load 'css-mode '(require 'setup-css-mode))
+(eval-after-load 'js2-mode '(require 'setup-js2-mode))
+(eval-after-load 'php-mode '(require 'setup-php-mode))
+(eval-after-load 'css-mode '(require 'setup-css-mode))
 
 ;; Map files to modes
 (require 'mode-mappings)
@@ -53,3 +52,8 @@
 (require 'appearance)
 ; (require 'my-misc)
 ; (when is-mac (require 'mac))
+
+(put 'dired-find-alternate-file 'disabled nil)
+
+; Use the arrow keys to change windows
+(windmove-default-keybindings)
