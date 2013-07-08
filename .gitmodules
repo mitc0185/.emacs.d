@@ -13,6 +13,9 @@
 [submodule "site-lisp/swank-js"]
 	path = site-lisp/swank-js
 	url = git@github.com:mitc0185/swank-js.git
-[submodule "zencoding"]
-	path = zencoding
+[submodule "site-lisp/zencoding-mode"]
+	path = site-lisp/zencoding-mode
 	url = git@github.com:mitc0185/zencoding.git
+[submodule "site-lisp/yaml-mode"]
+	path = site-lisp/yaml-mode
+	url = git@github.com:yoshiki/yaml-mode.git
