@@ -19,3 +19,6 @@
 [submodule "site-lisp/yaml-mode"]
 	path = site-lisp/yaml-mode
 	url = git@github.com:yoshiki/yaml-mode.git
+[submodule "site-lisp/occultation-mode"]
+	path = site-lisp/occultation-mode
+	url = git@github.com:mitc0185/occultation-mode.git
