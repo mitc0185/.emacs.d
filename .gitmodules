@@ -22,3 +22,6 @@
 [submodule "site-lisp/occultation-mode"]
 	path = site-lisp/occultation-mode
 	url = git@github.com:mitc0185/occultation-mode.git
+[submodule "site-lisp/markdown-mode"]
+	path = site-lisp/markdown-mode
+	url = git@github.com:mitc0185/markdown-mode.git
