@@ -40,4 +40,9 @@
 ;; Ledger
 (autoload 'ledger-mode "ledger-mode" nil t)
 
+;; Markdown
+(autoload 'markdown-mode "markdown-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.md$" . markdown-mode))
+
+
 (provide 'mode-mappings)
