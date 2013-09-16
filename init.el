@@ -5,6 +5,9 @@
 ;; Are we on a mac?
 (setq is-mac (equal system-type 'darwin))
 
+;; Are we on windows?
+(setq is-windows (equal system-type 'windows-nt))
+
 ;; Set path to dependencies
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
