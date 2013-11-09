@@ -28,3 +28,6 @@
 [submodule "site-lisp/org-mode"]
 	path = site-lisp/org-mode
 	url = git://orgmode.org/org-mode.git
+[submodule "site-lisp/groovy-mode"]
+	path = site-lisp/groovy-mode
+	url = git@github.com:russel/Emacs-Groovy-Mode.git
