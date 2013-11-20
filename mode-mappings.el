@@ -13,6 +13,7 @@
 (add-to-list 'auto-mode-alist '("\\.ftl\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tag$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.vm$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.ejs$" . web-mode))
 
 ;; JavaScript
 (autoload 'js2-mode "js2-mode" nil t)
