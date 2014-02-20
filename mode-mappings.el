@@ -1,7 +1,10 @@
 
 ;; CSS
 (add-to-list 'auto-mode-alist '("\\.scss$" . css-mode))
-(add-to-list 'auto-mode-alist '("\\.less$" . css-mode))
+
+;; Less
+(autoload 'less-css-mode "less-css-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.less$" . less-css-mode))
 
 ;; HTML
 (autoload 'web-mode "web-mode" nil t)

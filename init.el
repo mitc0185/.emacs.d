@@ -52,6 +52,7 @@
 (eval-after-load 'js2-mode '(require 'setup-js2-mode))
 (eval-after-load 'php-mode '(require 'setup-php-mode))
 (eval-after-load 'css-mode '(require 'setup-css-mode))
+(eval-after-load 'less-css-mode '(require 'setup-less-css-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 
 ;; Map files to modes
