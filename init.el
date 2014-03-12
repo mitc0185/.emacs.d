@@ -65,5 +65,8 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
+; Read in changes to files from disk
+(global-auto-revert-mode 1)
+
 ; Use the arrow keys to change windows
 (windmove-default-keybindings)
