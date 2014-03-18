@@ -58,8 +58,16 @@
 ;; Map files to modes
 (require 'mode-mappings)
 
+;; Client specific setup
+(require 'setup-hes)
+
 ;; Misc
 (require 'appearance)
+
+;; Smart Tabs
+; (require 'smart-tabs-mode)
+; (smart-tabs-insinuate 'javascript)
+
 ; (require 'my-misc)
 ; (when is-mac (require 'mac))
 

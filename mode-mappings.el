@@ -18,6 +18,7 @@
 (add-to-list 'auto-mode-alist '("\\.vm$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ejs$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.hbs$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php$" . web-mode))
 
 ;; JavaScript
 (autoload 'js2-mode "js2-mode" nil t)
@@ -26,8 +27,9 @@
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
 
 ;; PHP
-(autoload 'php-mode "php-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+; (autoload 'php-mode "php-mode" nil t)
+; (add-to-list 'auto-mode-alist '("\\.php$" . php-mode))
+; (add-to-list 'auto-mode-alist '("\\.php$" . web-mode))
 
 ;; org-mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
