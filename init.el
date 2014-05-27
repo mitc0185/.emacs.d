@@ -54,6 +54,7 @@
 (eval-after-load 'css-mode '(require 'setup-css-mode))
 (eval-after-load 'less-css-mode '(require 'setup-less-css-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
+(eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
 
 ;; Map files to modes
 (require 'mode-mappings)
@@ -78,3 +79,8 @@
 
 ; Use the arrow keys to change windows
 (windmove-default-keybindings)
+
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
