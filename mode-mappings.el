@@ -60,4 +60,7 @@
 (add-to-list 'auto-mode-alist '("\\.groovy$" . groovy-mode))
 (add-to-list 'auto-mode-alist '("\\.gradle$" . groovy-mode))
 
+(autoload 'clojure-mode "clojure-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
+
 (provide 'mode-mappings)
