@@ -63,4 +63,9 @@
 (autoload 'clojure-mode "clojure-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.clj$" . clojure-mode))
 
+;; Haskell
+(autoload 'haskell-mode "haskell-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.hs$" . groovy-mode))
+
+
 (provide 'mode-mappings)

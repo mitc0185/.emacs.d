@@ -90,6 +90,7 @@
 (eval-after-load 'less-css-mode '(require 'setup-less-css-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 (eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
+(eval-after-load 'haskell-mode '(require 'setup-haskell-mode))
 
 ;; Map files to modes
 (require 'mode-mappings)
