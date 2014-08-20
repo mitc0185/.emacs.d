@@ -31,3 +31,6 @@
 [submodule "site-lisp/groovy-mode"]
 	path = site-lisp/groovy-mode
 	url = git@github.com:russel/Emacs-Groovy-Mode.git
+[submodule "site-lisp/hyde"]
+	path = site-lisp/hyde
+	url = git@github.com:nibrahim/Hyde.git

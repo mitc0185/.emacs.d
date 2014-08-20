@@ -18,7 +18,7 @@
       (expand-file-name "site-lisp" user-emacs-directory))
 
 ;; Set up load path
-(add-to-list 'load-path user-emacs-directory)
+; (add-to-list 'load-path user-emacs-directory)
 (add-to-list 'load-path site-lisp-dir)
 
 ;; Settings for currently logged in user
@@ -40,11 +40,18 @@
       `(("." . ,(expand-file-name
                  (concat user-emacs-directory "backups")))))
 
+;; Set Font
+(unless is-mac
+  (set-face-attribute 'default nil :font  "Anonymous Pro-8" ))
+
+(if is-mac
+    (set-frame-size (selected-frame) 128 55))
+
 ;; Make backups of files, even when they're in version control
 (setq vc-make-backup-files t)
 
 ;; Setup extensions
-(eval-after-load 'org-mode '(require 'setup-org-mode))
+(eval-after-load 'org '(require 'setup-org))
 (eval-after-load 'web-mode '(require 'setup-web-mode))
 (eval-after-load 'ledger-mode '(require 'setup-ledger-mode))
 
@@ -55,6 +62,7 @@
 (eval-after-load 'less-css-mode '(require 'setup-less-css-mode))
 (eval-after-load 'markdown-mode '(require 'setup-markdown-mode))
 (eval-after-load 'clojure-mode '(require 'setup-clojure-mode))
+(eval-after-load 'haskell-mode '(require 'setup-haskell-mode))
 
 ;; Map files to modes
 (require 'mode-mappings)
