@@ -73,6 +73,11 @@
 ;; Misc
 (require 'appearance)
 
+;; Hyde
+(add-to-list 'load-path (concat site-lisp-dir "/hyde/hyde*.el"))
+(require 'hyde)
+
+
 ;; Smart Tabs
 ; (require 'smart-tabs-mode)
 ; (smart-tabs-insinuate 'javascript)
