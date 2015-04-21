@@ -25,12 +25,6 @@
 [submodule "site-lisp/markdown-mode"]
 	path = site-lisp/markdown-mode
 	url = git@github.com:mitc0185/markdown-mode.git
-[submodule "site-lisp/org-mode"]
-	path = site-lisp/org-mode
-	url = git://orgmode.org/org-mode.git
-[submodule "site-lisp/groovy-mode"]
-	path = site-lisp/groovy-mode
-	url = git@github.com:russel/Emacs-Groovy-Mode.git
 [submodule "site-lisp/hyde"]
 	path = site-lisp/hyde
 	url = git@github.com:nibrahim/Hyde.git
