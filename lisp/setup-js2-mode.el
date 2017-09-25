@@ -6,6 +6,8 @@
 
 (add-hook 'js2-mode-hook
 	  (lambda ()
-	    (setq indent-tabs-mode nil)))
+	    (setq indent-tabs-mode nil)
+	    (setq js2-strict-missing-semi-warning nil)
+	    ))
 
 (provide 'setup-js2-mode)
